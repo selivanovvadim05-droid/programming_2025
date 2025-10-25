@@ -5,12 +5,12 @@
 using namespace std;
 
 int main() {
-    //                              Пункт 1
+    //                              ГЏГіГ­ГЄГІ 1
     setlocale(LC_ALL, "RU");
     int size = 8;
     vector<int> mas(size);
 
-    cout << "Введите " << size << " целых чисел для массива:" << endl;
+    cout << "Р’РІРµРґРёС‚Рµ " << size << " С†РµР»С‹С… С‡РёСЃРµР» РґР»СЏ РјР°СЃСЃРёРІР°:" << endl;
     for (int i = 0; i < size; ++i) {
         cin >> mas[i];
     }
@@ -24,24 +24,24 @@ int main() {
 
     if (cnt > 2) {
         sort(mas.begin(), mas.end());
-        cout << "Массив упорядочен по возрастанию." << endl;
+        cout << "РњР°СЃСЃРёРІ СѓРїРѕСЂСЏРґРѕС‡РµРЅ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ." << endl;
     }
     else {
-        cout << "Число 25 встречается не более двух раз. Массив не упорядочен." << endl;
+        cout << "Р§РёСЃР»Рѕ 25 РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ РЅРµ Р±РѕР»РµРµ РґРІСѓС… СЂР°Р·. РњР°СЃСЃРёРІ С‚Р°РєРѕР№ Р¶Рµ" << endl;
     }
 
-    cout << "Массив: ";
+    cout << "РњР°СЃСЃРёРІ: ";
     for (int i = 0; i < size; ++i) {
         cout << mas[i] << " ";
     }
     cout << endl;
 
-    //                                          Пункт 2
+    //                                          ГЏГіГ­ГЄГІ 2
     const int row = 3;
     const int col = 4;
     int matrix[row][col];
 
-    cout << "Введите элементы матрицы " << row << "x" << col << ":" << endl;
+    cout << "Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹ " << row << "x" << col << ":" << endl;
     for (int i = 0; i < row; ++i) {
         for (int j = 0; j < col; ++j) {
             cin >> matrix[i][j];
@@ -66,7 +66,7 @@ int main() {
     }
 
     if (maxrow0 != -1) {
-        cout << "Строка с наибольшим количеством нулей: " << maxrow0 << endl;
+        cout << "РЎС‚СЂРѕРєР° СЃ РЅР°РёР±РѕР»СЊС€РёРј РєРѕР»РёС‡РµСЃС‚РІРѕРј РЅСѓР»РµР№: " << maxrow0 << endl;
         for (int j = 0; j < col; ++j) {
             if (matrix[maxrow0][j] == 0) {
                 matrix[maxrow0][j] = 888;
@@ -74,10 +74,10 @@ int main() {
         }
     }
     else {
-        cout << "В матрице нет нулей." << endl;
+        cout << "Р’ РјР°С‚СЂРёС†Рµ РЅРµС‚ РЅСѓР»РµР№." << endl;
     }
 
-    cout << "Измененная матрица:" << endl;
+    cout << "РР·РјРµРЅРµРЅРЅР°СЏ РјР°С‚СЂРёС†Р°:" << endl;
     for (int i = 0; i < row; ++i) {
         for (int j = 0; j < col; ++j) {
             cout << matrix[i][j] << " ";
@@ -87,3 +87,4 @@ int main() {
 
     return 0;
 }
+
