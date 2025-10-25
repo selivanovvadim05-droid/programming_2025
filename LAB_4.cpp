@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    //                              Ïóíêò 1
+    //                              Пункт 1
     setlocale(LC_ALL, "RU");
     int size = 8;
     vector<int> mas(size);
@@ -36,7 +36,7 @@ int main() {
     }
     cout << endl;
 
-    //                                          Ïóíêò 2
+    //                                          Пункт 2
     const int row = 3;
     const int col = 4;
     int matrix[row][col];
@@ -87,4 +87,5 @@ int main() {
 
     return 0;
 }
+
 
