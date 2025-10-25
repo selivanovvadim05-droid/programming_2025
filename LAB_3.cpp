@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-    // Ïóíêò 1
+    // Пункт 1
     setlocale(LC_ALL, "RU");
     int N;
     cout << "N: ";
@@ -48,7 +48,7 @@ int main() {
         cout << "Индекс наименьшего числа: " << minInd << endl;
     }
 
-    // Ïóíêò 2
+    // Пункт 2
     int X;
     cout << "X: ";
     cin >> X;
@@ -76,3 +76,4 @@ int main() {
     return 0;
 
 }
+
