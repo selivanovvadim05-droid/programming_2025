@@ -23,7 +23,15 @@ int main() {
     }
 
     if (cnt > 2) {
-        sort(mas.begin(), mas.end());
+        for (int i = 0; i < size - 1; ++i) {
+            for (int j = 0; j < size - 1; ++i) {
+                if (mas[j] > mas[j+1]) {
+                    int temp = mas[j];
+                mas[j] = mas[j + 1];
+                mas[j + 1] = temp;
+        }
+    }
+}
         cout << "Массив упорядочен по возрастанию." << endl;
     }
     else {
@@ -87,5 +95,6 @@ int main() {
 
     return 0;
 }
+
 
 
