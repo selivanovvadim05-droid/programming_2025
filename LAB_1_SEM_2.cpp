@@ -9,7 +9,6 @@ class Product {
 public:
     string name;
 
-    // Конструктор по умолчанию
     Product()
         : name("Unnamed"),
           description("No description"),
@@ -51,38 +50,30 @@ public:
         cout << "[Constructor] Full constructor called for Product: " << name << endl;
     }
 
-    ~Product() {
+    ~Product() 
         cout << "[Destructor] Destructor called for Product: " << getName() << endl;
-    }
 
-    string getName() const {
+    string getName() const 
         return name.empty() ? string("Unnamed") : name;
-    }
 
-    string getDescription() const {
+    string getDescription() const 
         return description.empty() ? string("No description") : description;
-    }
 
-    double getPrice() const {
+    double getPrice() const 
         return price;
-    }
 
-    int getShelfLife() const {
+    int getShelfLife() const 
         return shelfLife;
-    }
 
-    string getPlace() const {
+    string getPlace() const 
         return place.empty() ? string("Unknown") : place;
-    }
 
-    void setDescription(const string& desc) {
+    void setDescription(const string& desc) 
         description = desc;
-    }
 
     bool setPrice(double newPrice) {
-        if (newPrice < 0.0) {
+        if (newPrice < 0.0) 
             return false;
-        }
         price = newPrice;
         return true;
     }
@@ -93,9 +84,8 @@ public:
         return true;
     }
 
-    void setPlace(const string& p) {
+    void setPlace(const string& p) 
         if (!p.empty()) place = p;
-    }
 
     void printAllInfo() const {
         cout << "Product information:\n";
@@ -106,9 +96,8 @@ public:
         cout << "  Place       : " << getPlace() << '\n';
     }
 
-    void printWhereToGet() const {
+    void printWhereToGet() const 
         cout << "Get the product \"" << getName() << "\" at: " << getPlace() << '\n';
-    }
 
     bool decreaseShelfLife(int days) {
         if (days < 0) return false;
